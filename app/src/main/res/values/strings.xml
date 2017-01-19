@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Quiz</string>
+
+    <string name="question_1_eurovision">Cine a reprezentat România la Eurovision 2011?</string>
+    <string name="question_2_sergiu_nicolaescu">Care este titlul celui mai recent film lansat de regizorul român Sergiu Nicolaescu?</string>
+    <string name="question_3_europa_fluviu">Care este cel mai lung fluviu din Europa?</string>
+    <string name="question_4_champions_league">Care dintre aceste echipe a câştigat finala Ligii Campionilor 2012?</string>
+    <string name="question_5_capitala">Care este singura capitală europeană aflată la peste 3.500 de kilometri depărtare de Bucureşti?</string>
+    <string name="question_6_primul_razboi_mondial">În ce lună a anului a intrat România în Primul Război Mondial?</string>
+    <string name="question_7_regele_mihai_si_regina_ana">Câţi copii au Regele Mihai I şi Regina Ana?</string>
+    <string name="question_8_taxi">Cum se numește trupa care a scris melodia "Ești Iubibilă?"</string>
+    <string name="question_9_florin_piersic">Cum se numește personaul interpretat de Florin Piersic în filmul "Haiducii lui Șaptecai"</string>
+    <string name="question_10_prima_noapte_de_dragoste">Cine a scris cartea "Prima noapte de dragoste, Întaia noapte de război"</string>
 </resources>
