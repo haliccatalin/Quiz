@@ -1,14 +1,65 @@
 <resources>
     <string name="app_name">Quiz</string>
 
+    <string name="scor_corect">Corecte:</string>
+    <string name="scor_incorect">Incorecte:</string>
+
+    <string name="response_title">Este un ... </string>
+
+    <string name="correct_message">Raspuns corect!</string>
+    <string name="incorrect_message">Raspuns incorect! \nRaspunsul corect era %1$s</string>
+
+    <string name="final_message">Ai raspuns corect la %1$d intrebari</string>
+
+    <string name="next_question">Urmatoarea</string>
+
     <string name="question_1_eurovision">Cine a reprezentat România la Eurovision 2011?</string>
+    <string name="answer_1_A">A. Mandinga</string>
+    <string name="answer_1_B">B. Paula Seling şi Ovi</string>
+    <string name="answer_1_C">C. Hotel FM</string>
+
     <string name="question_2_sergiu_nicolaescu">Care este titlul celui mai recent film lansat de regizorul român Sergiu Nicolaescu?</string>
+    <string name="answer_2_A">A. Poker</string>
+    <string name="answer_2_B">B. Mihai Viteazul</string>
+    <string name="answer_2_C">C. Ultimul corupt din România</string>
+
     <string name="question_3_europa_fluviu">Care este cel mai lung fluviu din Europa?</string>
+    <string name="answer_3_A">A. Dunăre</string>
+    <string name="answer_3_B">B. Volga</string>
+    <string name="answer_3_C">C. Rin</string>
+
     <string name="question_4_champions_league">Care dintre aceste echipe a câştigat finala Ligii Campionilor 2012?</string>
+    <string name="answer_4_A">A. Chelsea</string>
+    <string name="answer_4_B">B. Bayern</string>
+    <string name="answer_4_C">C. FC Barcelona</string>
+
     <string name="question_5_capitala">Care este singura capitală europeană aflată la peste 3.500 de kilometri depărtare de Bucureşti?</string>
+    <string name="answer_5_A">A. Stockholm</string>
+    <string name="answer_5_B">B. Nicosia</string>
+    <string name="answer_5_C">C. Reykjavik</string>
+
     <string name="question_6_primul_razboi_mondial">În ce lună a anului a intrat România în Primul Război Mondial?</string>
+    <string name="answer_6_A">A. mai</string>
+    <string name="answer_6_B">B. octombrie</string>
+    <string name="answer_6_C">C. august</string>
+
     <string name="question_7_regele_mihai_si_regina_ana">Câţi copii au Regele Mihai I şi Regina Ana?</string>
+    <string name="answer_7_A">A. 3</string>
+    <string name="answer_7_B">B. 6</string>
+    <string name="answer_7_C">C. 5</string>
+
     <string name="question_8_taxi">Cum se numește trupa care a scris melodia "Ești Iubibilă?"</string>
+    <string name="answer_8_A">A. Taxi</string>
+    <string name="answer_8_B">B. Holograf</string>
+    <string name="answer_8_C">C. Mandinga</string>
+
     <string name="question_9_florin_piersic">Cum se numește personaul interpretat de Florin Piersic în filmul "Haiducii lui Șaptecai"</string>
+    <string name="answer_9_A">A. Margelatul</string>
+    <string name="answer_9_B">B. Anghel zis Șaptecai </string>
+    <string name="answer_9_C">C. Pacala</string>
+
     <string name="question_10_prima_noapte_de_dragoste">Cine a scris cartea "Prima noapte de dragoste, Întaia noapte de război"</string>
+    <string name="answer_10_A">A. Camil Petrescu</string>
+    <string name="answer_10_B">B. Liviu Rebreanu</string>
+    <string name="answer_10_C">C. Mihai Eminescu</string>
 </resources>

@@ -10,60 +10,158 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="ro.quiz.QuizActivity">
 
-    <android.support.v4.view.ViewPager
-        android:id="@+id/viewPager_quiz_images"
+    <RelativeLayout
+        android:id="@+id/relativeLayout_quiz_scor"
         android:layout_width="match_parent"
-        android:layout_height="400dp"
-        android:layout_alignParentTop="true"/>
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
 
-    <LinearLayout
-        android:id="@+id/linearLayout_quiz_buttons"
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:layout_alignParentBottom="true"
-        android:weightSum="3">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentLeft="true">
 
-        <Button
-            android:id="@+id/button_quiz_A"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="A"
-            android:textColor="@color/colorPrimary"
-            android:textSize="28sp"
-            android:textAlignment="center"/>
+            <TextView
+                android:id="@+id/textView_quiz_corect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/scor_corect"
+                android:textColor="@color/colorPrimary"/>
 
-        <Button
-            android:id="@+id/button_quiz_B"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="B"
-            android:textColor="@color/colorPrimary"
-            android:textSize="28sp"
-            android:textAlignment="center"/>
+            <TextView
+                android:id="@+id/textView_quiz_scorCorect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:text="0"
+                android:textColor="@color/colorPrimary"/>
 
-        <Button
-            android:id="@+id/button_quiz_C"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="C"
-            android:textColor="@color/colorPrimary"
-            android:textSize="28sp"
-            android:textAlignment="center"/>
+        </LinearLayout>
 
-    </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true">
+
+            <TextView
+                android:id="@+id/textView_quiz_incorect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:text="@string/scor_incorect"
+                android:textColor="@color/colorPrimary"/>
+
+            <TextView
+                android:id="@+id/textView_quiz_scorInorect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/colorPrimary"/>
+
+        </LinearLayout>
+    </RelativeLayout>
 
     <TextView
         android:id="@+id/textView_quiz_question"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@id/viewPager_quiz_images"
-        android:layout_above="@id/linearLayout_quiz_buttons"
+        android:layout_height="70dp"
+        android:layout_below="@id/relativeLayout_quiz_scor"
         android:text="Intrebare"
         android:textSize="20sp"
         android:textColor="@color/colorPrimary"
-        android:gravity="center_horizontal|center_vertical"/>
+        android:gravity="center_horizontal|center_vertical"
+        />
+
+    <ImageView
+        android:id="@+id/imageView_quiz_images"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/textView_quiz_question"/>
+
+    <RelativeLayout
+        android:id="@+id/linearLayout_quiz_answer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:layout_below="@id/imageView_quiz_images">
+
+        <LinearLayout
+            android:id="@+id/linearLayout_quiz_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:weightSum="3">
+
+            <Button
+                android:id="@+id/button_quiz_A"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="A"
+                android:textColor="@color/colorPrimary"
+                android:textSize="28sp"
+                android:textAlignment="center"/>
+
+            <Button
+                android:id="@+id/button_quiz_B"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="B"
+                android:textColor="@color/colorPrimary"
+                android:textSize="28sp"
+                android:textAlignment="center"/>
+
+            <Button
+                android:id="@+id/button_quiz_C"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="C"
+                android:textColor="@color/colorPrimary"
+                android:textSize="28sp"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/linearLayout_quiz_buttons"
+            android:layout_marginBottom="40dp"
+            android:orientation="vertical"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/textView_answer_A"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Answer A"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/textView_answer_B"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Answer A"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/textView_answer_C"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Answer A"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
 
 </RelativeLayout>
