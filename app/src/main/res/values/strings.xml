@@ -7,7 +7,7 @@
     <string name="response_title">Este un ... </string>
 
     <string name="correct_message">Raspuns corect!</string>
-    <string name="incorrect_message">Raspuns incorect! \nRaspunsul corect era %1$s</string>
+    <string name="incorrect_message">Raspuns incorect! \nRaspunsul corect este la litera: %1$s</string>
 
     <string name="final_message">Ai raspuns corect la %1$d intrebari</string>
 
@@ -53,12 +53,12 @@
     <string name="answer_8_B">B. Holograf</string>
     <string name="answer_8_C">C. Mandinga</string>
 
-    <string name="question_9_florin_piersic">Cum se numește personaul interpretat de Florin Piersic în filmul "Haiducii lui Șaptecai"</string>
+    <string name="question_9_florin_piersic">Cum se numește personaul interpretat de Florin Piersic în filmul "Haiducii lui Șaptecai?"</string>
     <string name="answer_9_A">A. Margelatul</string>
     <string name="answer_9_B">B. Anghel zis Șaptecai </string>
     <string name="answer_9_C">C. Pacala</string>
 
-    <string name="question_10_prima_noapte_de_dragoste">Cine a scris cartea "Prima noapte de dragoste, Întaia noapte de război"</string>
+    <string name="question_10_prima_noapte_de_dragoste">Cine a scris cartea "Prima noapte de dragoste, Întaia noapte de război?"</string>
     <string name="answer_10_A">A. Camil Petrescu</string>
     <string name="answer_10_B">B. Liviu Rebreanu</string>
     <string name="answer_10_C">C. Mihai Eminescu</string>

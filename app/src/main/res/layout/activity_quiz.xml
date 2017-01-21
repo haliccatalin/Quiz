@@ -103,7 +103,8 @@
                 android:text="A"
                 android:textColor="@color/colorPrimary"
                 android:textSize="28sp"
-                android:textAlignment="center"/>
+                android:textAlignment="center"
+                android:gravity="center"/>
 
             <Button
                 android:id="@+id/button_quiz_B"
@@ -113,7 +114,8 @@
                 android:text="B"
                 android:textColor="@color/colorPrimary"
                 android:textSize="28sp"
-                android:textAlignment="center"/>
+                android:textAlignment="center"
+                android:gravity="center"/>
 
             <Button
                 android:id="@+id/button_quiz_C"
@@ -123,7 +125,8 @@
                 android:text="C"
                 android:textColor="@color/colorPrimary"
                 android:textSize="28sp"
-                android:textAlignment="center"/>
+                android:textAlignment="center"
+                android:gravity="center"/>
 
         </LinearLayout>
 
@@ -163,5 +166,12 @@
 
 
     </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView_quiz_finish"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/finishline"
+        android:visibility="invisible"/>
 
 </RelativeLayout>

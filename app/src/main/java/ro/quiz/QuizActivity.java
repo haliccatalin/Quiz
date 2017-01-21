@@ -58,7 +58,7 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
     };
 
 
-    ImageView imageView_images;
+    ImageView imageView_images, imageView_finish;
 
     TextView textView_question;
 
@@ -92,6 +92,14 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
         textView_question = (TextView) findViewById(R.id.textView_quiz_question);
 
         imageView_images = (ImageView) findViewById(R.id.imageView_quiz_images);
+        imageView_finish = (ImageView) findViewById(R.id.imageView_quiz_finish);
+        imageView_finish.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                imageView_finish.setVisibility(View.VISIBLE);
+                Toast.makeText(context, String.format(getString(R.string.final_message), scorCorect), Toast.LENGTH_SHORT).show();
+            }
+        });
 
         textView_answer_A = (TextView) findViewById(R.id.textView_answer_A);
         button_answer_A = (Button) findViewById(R.id.button_quiz_A);
@@ -175,7 +183,6 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
 
         if(questionArray.length <= count) {
-            Toast.makeText(context, String.format(getString(R.string.final_message), scorCorect), Toast.LENGTH_SHORT).show();
             return;
         }
 
@@ -226,6 +233,9 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
                 setQuestionText(++count);
+                if(answerArray.length <= count) {
+                    imageView_finish.setVisibility(View.VISIBLE);
+                }
                 dialogInterface.dismiss();
             }
         });
